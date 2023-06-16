@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container px-4">
+            <h1 class="text-center">My Shopping</h1>
+            <div class="row gx-4 mt-3">
+                <div class="col bg-light">
+                    <div class="row">
+                        <div class="col-4 py-3">
+                            <img src="img/watch1.PNG" alt="">
+                            <h2>Price $ <span id="rolex-item">32</span></h2>
+                        </div>
+                        <div class="col-2 title d-flex align-items-center">
+                            <h3>Rolex watch</h3>
+                        </div>
+                        <div class="input col-3 d-flex align-items-center justify-content-between">
+                            <button onclick="increament('count','rolex-price','rolex-item')"><i class="fa-solid fa-plus"></i></button> <input id="count" type="number" value="0" min="0"> <button onclick="decreament('count','rolex-price','rolex-item')"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div class="value col-3 d-flex align-items-center">
+                            <h2>$ <span id="rolex-price">0</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-4 mt-3">
+                <div class="col bg-light">
+                    <div class="row">
+                        <div class="col-4 py-3">
+                            <img src="img/watch2.PNG" alt="">
+                            <h2>Price $ <span id="zenith-item">35</span></h2>
+                        </div>
+                        <div class="col-2 title d-flex align-items-center">
+                            <h3>Zenith watch</h3>
+                        </div>
+                        <div class="input col-3 d-flex align-items-center justify-content-between">
+                            <button onclick="increament('count1','zenith-price','zenith-item')"><i class="fa-solid fa-plus"></i></button> <input id="count1" type="number" value="0" min="0"> <button onclick="decreament('count1','zenith-price','zenith-item')"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div class="value col-3 d-flex align-items-center">
+                            <h2>$ <span id="zenith-price">0</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row">
+                <div class="col-3">
+
+                </div>
+                <div class="col-6">
+                    <h4>Sub total: </h4>
+                    <h4>Tax: </h4>
+                    <h4>Total: </h4>
+                </div>
+                <div class="col-3">
+                    <h4>$ <span id="sub-total">0</span></h4>
+                    <h4>$ <span id="tax-total">2.5</span></h4>
+                    <h4>$ <span id="total">0</span></h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
